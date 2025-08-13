@@ -1129,7 +1129,7 @@ def main():
         st.markdown("---")
         st.markdown("""
         <div style='text-align: center; color: gray; font-size: 12px;'>
-            SafeVision AI v2.0<br>
+            SafeVision AI v1.0<br>
             Advanced PPE Detection System
         </div>
         """, unsafe_allow_html=True)
