@@ -420,10 +420,11 @@ def create_history_chart(history_data):
 # ---------------------- PAGE FUNCTIONS ----------------------
 def home_page():
     """Render the home page"""
+    st.header("Welcome to SafeVision AI")
     st.markdown("""
     <div style="text-align: center; padding: 20px;">
         <!-- Logo -->
-        <img src="PPE-Helmet-Vest-Detection-using-CNN-and-Transfer-Learning/SafeVision AI Logo and Tagline.png" alt="SafeVision AI Logo" style="width: 120px; margin-bottom: 10px;">
+        <img src="logo.png" alt="SafeVision AI Logo" style="width: 120px; margin-bottom: 10px;">
         <!-- Main Heading -->
         <h1 style="color: #1a3d5d; font-family: Arial, sans-serif;">🛡️ SafeVision AI</h1>
         <p style="font-size: 18px; color: #555;">Advanced PPE Detection & Safety Monitoring System</p>
