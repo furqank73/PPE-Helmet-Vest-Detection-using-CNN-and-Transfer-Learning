@@ -20,10 +20,10 @@ SETTINGS_FILE = "app_settings.json"
 
 # Default settings
 DEFAULT_SETTINGS = {
-    "theme": "dark",
+    "theme": "light",
     "primary_color": "#1f77b4",
     "model_path": "best_model.pth",
-    "confidence_threshold": 0.7
+    "confidence_threshold": 0.55
 }
 
 # ---------------------- UTILITY FUNCTIONS ----------------------
@@ -422,7 +422,7 @@ def home_page():
     """Render the home page"""
     st.markdown("""
     <div class="main-header">
-        <h1>👷‍♂️ PPE Guardian </h1>
+        <h1>🛡️ SafeVision AI</h1>
         <p> Detect, protect, prevent.</p>
     </div>
     """, unsafe_allow_html=True)
