@@ -418,34 +418,14 @@ def create_history_chart(history_data):
     return fig
 
 # ---------------------- PAGE FUNCTIONS ----------------------
-import base64
-import streamlit as st
-
 def home_page():
     """Render the home page"""
-
-    # Convert local image to base64
-    with open("logo.png", "rb") as img_file:
-        logo_base64 = base64.b64encode(img_file.read()).decode()
-
-    st.markdown(f"""
-    <div style="text-align: left; padding: 8px;">
-        <!-- Logo -->
-        <img src="data:image/png;base64,{logo_base64}" alt="SafeVision AI Logo" style="width: 200px; margin-bottom: 2px;">
-        <!-- Main Heading -->
-        <h1 style="color: #1a3d5d; font-family: Arial, sans-serif;">🛡️ SafeVision AI</h1>
-        <p style="font-size: 18px; color: #555;">Advanced PPE Detection & Safety Monitoring System</p>
-        <!-- Divider -->
-        <hr style="margin-top: 15px; border: 1px solid #ddd;">
-        <!-- Author Info -->
-        <p style="margin-top: 10px; font-size: 16px; color: #333;">
-            Developed by <b>M Furqan Khan</b><br>
-            <i>Machine Learning Engineer & Data Scientist</i>
-        </p>
+    st.markdown("""
+    <div class="main-header">
+        <h1>👷‍♂️ PPE Guardian </h1>
+        <p> Detect, protect, prevent.</p>
     </div>
     """, unsafe_allow_html=True)
-
-
     
     # Key features
     col1, col2, col3 = st.columns(3)
