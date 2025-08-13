@@ -423,7 +423,22 @@ def home_page():
     st.markdown("""
     <div class="main-header">
         <h1>🛡️ SafeVision AI</h1>
-        <p> Detect, protect, prevent.</p>
+        <p>Detect, protect, prevent.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Social links section
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="https://github.com/yourusername" target="_blank" style="margin: 0 10px; text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" width="30" height="30" style="filter: invert(0.5);">
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" style="margin: 0 10px; text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="30" height="30" style="filter: invert(0.3);">
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" style="margin: 0 10px; text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" width="30" height="30" style="filter: invert(0.5);">
+        </a>
     </div>
     """, unsafe_allow_html=True)
     
