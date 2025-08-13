@@ -433,7 +433,7 @@ def home_page():
     with col1:
         st.markdown("""
         <div class="metric-card">
-            <h3>🔍 Real-time Analysis</h3>
+            <h3>Real-time Analysis</h3>
             <p>Instant PPE detection from images or live camera feed with high accuracy predictions.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -441,7 +441,7 @@ def home_page():
     with col2:
         st.markdown("""
         <div class="metric-card">
-            <h3>📊 Smart Analytics</h3>
+            <h3>Smart Analytics</h3>
             <p>Comprehensive history tracking with visual analytics and exportable reports.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -449,7 +449,7 @@ def home_page():
     with col3:
         st.markdown("""
         <div class="metric-card">
-            <h3>⚡ AI-Powered</h3>
+            <h3>AI-Powered</h3>
             <p>Advanced deep learning model trained on extensive PPE safety datasets.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -457,7 +457,7 @@ def home_page():
     # Quick stats
     history = load_history()
     if history:
-        st.subheader("📈 Quick Statistics")
+        st.subheader("Quick Statistics")
         
         total_detections = len(history)
         safe_count = sum(1 for h in history if h['class'] == 'Safe')
@@ -476,7 +476,7 @@ def home_page():
             st.plotly_chart(timeline_fig, use_container_width=True)
     
     # Getting started
-    st.subheader("🚀 Getting Started")
+    st.subheader("Getting Started")
     st.markdown("""
     1. **Upload an Image**: Go to the Analyze page and upload an image for PPE detection
     2. **Use Live Camera**: Capture real-time images using your device camera
@@ -487,7 +487,7 @@ def home_page():
 
 def analyze_page():
     """Render the analyze page"""
-    st.header("🔍 PPE Safety Analysis")
+    st.header("PPE Safety Analysis")
     
     # Input method selection
     tab1, tab2 = st.tabs(["📤 Upload Image", "📷 Live Camera"])
@@ -751,10 +751,10 @@ def history_page():
 
 def model_info_page():
     """Render the model information page"""
-    st.header("🤖 Model Information")
+    st.header("Model Information")
     
     # Model Overview
-    with st.expander("📋 Model Overview", expanded=True):
+    with st.expander("Model Overview", expanded=True):
         st.markdown("""
         **SafeVision AI** uses a deep learning approach for Personal Protective Equipment (PPE) detection
         and safety compliance monitoring. The model is designed to classify workplace environments as
@@ -779,7 +779,7 @@ def model_info_page():
             """)
     
     # Technical Details
-    with st.expander("⚙️ Technical Specifications"):
+    with st.expander("Technical Specifications"):
         st.markdown("""
         ### Model Architecture
         - **Base Model**: ResNet-18 (18-layer residual network)
@@ -801,7 +801,7 @@ def model_info_page():
         """)
 
     # Dataset Information
-    with st.expander("📊 Dataset Information"):
+    with st.expander("Dataset Information"):
         st.markdown("""
         ### Training Dataset
         The model has been trained on a comprehensive dataset of workplace safety images:
@@ -822,7 +822,7 @@ def model_info_page():
         """)
     
     # Model Performance
-    with st.expander("📈 Performance Metrics"):
+    with st.expander("Performance Metrics"):
         # Create sample performance metrics visualization
         metrics_data = {
             'Metric': ['Accuracy', 'Precision (Safe)', 'Precision (Unsafe)', 'Recall (Safe)', 'Recall (Unsafe)', 'F1-Score'],
@@ -851,7 +851,7 @@ def model_info_page():
         """)
     
     # Usage Guidelines
-    with st.expander("📖 Usage Guidelines"):
+    with st.expander("Usage Guidelines"):
         st.markdown("""
         ### Best Practices for Accurate Detection
         
@@ -880,7 +880,7 @@ def model_info_page():
         """)
     
     # Example Predictions
-    with st.expander("🖼️ Example Predictions"):
+    with st.expander("Example Predictions"):
         st.markdown("""
         ### Sample Detection Scenarios
         
@@ -900,7 +900,7 @@ def model_info_page():
         """)
     
     # Model Status
-    st.subheader("🔧 Current Model Status")
+    st.subheader("Current Model Status")
     
     try:
         settings = st.session_state.get('settings', load_settings())
@@ -940,14 +940,14 @@ def settings_page():
     settings = st.session_state.settings
     
     # Theme Settings
-    st.subheader("🎨 Theme & Appearance")
+    st.subheader("Tyuiheme & Appearance")
     
     col1, col2 = st.columns(2)
     
     with col1:
         new_theme = st.selectbox(
             "Color Theme",
-            options=["dark", "light"],
+            options=["dark","light"],
             index=0 if settings['theme'] == 'dark' else 1,
             help="Choose between dark and light theme"
         )
@@ -959,7 +959,12 @@ def settings_page():
             "Red": "#d62728",
             "Purple": "#9467bd",
             "Orange": "#ff7f0e",
-            "Teal": "#17becf"
+            "Teal": "#17becf",
+            "blue-gray": "#7f7f7f",
+            "Pink": "#e377c2",
+            "Yellow": "#bcbd22",
+            "Brown": "#8c564b"
+            
         }
         
         current_color_name = next((name for name, color in color_options.items() 
