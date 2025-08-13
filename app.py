@@ -1108,7 +1108,7 @@ def main():
     with st.sidebar:
         st.title("🛡️ SafeVision AI")
         st.markdown("---")
-        with st.sidebar:
+    with st.sidebar:
     st.markdown("### 🌐 Connect with Us")
     st.markdown("""
     [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/yourusername)
