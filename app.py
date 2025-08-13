@@ -429,9 +429,9 @@ def home_page():
         logo_base64 = base64.b64encode(img_file.read()).decode()
 
     st.markdown(f"""
-    <div style="text-align: center; padding: 8px;">
+    <div style="text-align: left; padding: 8px;">
         <!-- Logo -->
-        <img src="data:image/png;base64,{logo_base64}" alt="SafeVision AI Logo" style="width: 300px; margin-bottom: 2px;">
+        <img src="data:image/png;base64,{logo_base64}" alt="SafeVision AI Logo" style="width: 200px; margin-bottom: 2px;">
         <!-- Main Heading -->
         <h1 style="color: #1a3d5d; font-family: Arial, sans-serif;">🛡️ SafeVision AI</h1>
         <p style="font-size: 18px; color: #555;">Advanced PPE Detection & Safety Monitoring System</p>
