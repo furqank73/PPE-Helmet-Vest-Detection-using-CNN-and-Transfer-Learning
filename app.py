@@ -1138,7 +1138,6 @@ def main():
         st.markdown("""
     [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/yourusername)
     [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yourusername)
-    [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/yourusername)
     """, unsafe_allow_html=True)
     
     # Route to appropriate page
