@@ -431,7 +431,7 @@ def home_page():
     st.markdown(f"""
     <div style="text-align: center; padding: 20px;">
         <!-- Logo -->
-        <img src="data:image/png;base64,{logo_base64}" alt="SafeVision AI Logo" style="width: 120px; margin-bottom: 10px;">
+        <img src="data:image/png;base64,{logo_base64}" alt="SafeVision AI Logo" style="width: 300px; margin-bottom: 10px;">
         <!-- Main Heading -->
         <h1 style="color: #1a3d5d; font-family: Arial, sans-serif;">🛡️ SafeVision AI</h1>
         <p style="font-size: 18px; color: #555;">Advanced PPE Detection & Safety Monitoring System</p>
