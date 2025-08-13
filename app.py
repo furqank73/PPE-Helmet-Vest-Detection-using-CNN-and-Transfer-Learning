@@ -436,9 +436,6 @@ def home_page():
         <a href="https://www.linkedin.com/in/yourusername" target="_blank" style="margin: 0 10px; text-decoration: none;">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="30" height="30" style="filter: invert(0.3);">
         </a>
-        <a href="https://twitter.com/yourusername" target="_blank" style="margin: 0 10px; text-decoration: none;">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" width="30" height="30" style="filter: invert(0.5);">
-        </a>
     </div>
     """, unsafe_allow_html=True)
     
