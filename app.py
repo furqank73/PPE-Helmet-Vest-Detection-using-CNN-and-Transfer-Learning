@@ -421,11 +421,25 @@ def create_history_chart(history_data):
 def home_page():
     """Render the home page"""
     st.markdown("""
-    <div class="main-header">
-        <h1>🛡️ SafeVision AI</h1>
-        <p>Advanced PPE Detection & Safety Monitoring System</p>
+    <div style="text-align: center; padding: 20px;">
+        <!-- Logo -->
+        <img src="PPE-Helmet-Vest-Detection-using-CNN-and-Transfer-Learning/SafeVision AI Logo and Tagline.png" alt="SafeVision AI Logo" style="width: 120px; margin-bottom: 10px;">
+        
+        <!-- Main Heading -->
+        <h1 style="color: #1a3d5d; font-family: Arial, sans-serif;">🛡️ SafeVision AI</h1>
+        <p style="font-size: 18px; color: #555;">Advanced PPE Detection & Safety Monitoring System</p>
+        
+        <!-- Divider -->
+        <hr style="margin-top: 15px; border: 1px solid #ddd;">
+        
+        <!-- Author Info -->
+        <p style="margin-top: 10px; font-size: 16px; color: #333;">
+            Developed by <b>M Furqan Khan</b><br>
+            <i>Machine Learning Engineer & Data Scientist</i>
+        </p>
     </div>
     """, unsafe_allow_html=True)
+
     
     # Key features
     col1, col2, col3 = st.columns(3)
